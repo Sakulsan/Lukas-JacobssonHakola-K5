@@ -5,13 +5,12 @@
     font-family: "Segoe UI","Helvetica Neue","Helvetica",Arial,sans-serif;
 }
 article{
+    left: 9vw;
+    top: 34.3vh;
+    position: relative;
+    width: 82vw;
+    height: 200vh;
     
-    width: 100vw;
-    height: 100vh;
-    background-image: url(BackgroundGif.webp);
-    background-size: cover;
-    background-origin: border-box;
-    backdrop-filter: blur(0.2em);
 }
 
 h2{
@@ -21,11 +20,24 @@ h2{
     background-color: rgba(0,0,0,0);
 }
 
-div{
+    
+* {
+    filter: blur(0);
+}
 
-    left: 9vw;
-    top: 39vh;
-    position: relative;
-    width: 82vw;
-    height: 200vh;
+img{
+position: absolute;
+width: 100vw;
+height: 100vh;
+filter: blur(3px);
+}
+
+nav{
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 10vh;
+    background-color: white;
 }
