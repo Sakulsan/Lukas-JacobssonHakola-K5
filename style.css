@@ -5,12 +5,12 @@
     font-family: "Segoe UI","Helvetica Neue","Helvetica",Arial,sans-serif;
 }
 article{
-    left: 9vw;
-    top: 34.3vh;
+    left: 12vw;
+    top: 25vh;
     position: relative;
-    width: 82vw;
-    height: 200vh;
-    
+    width: 66vw;
+    height: 115vh;
+    padding: 10vh;
 }
 
 h2{
@@ -28,40 +28,68 @@ h2{
 #bakdrop{
 top: 0;
 position: fixed;
-width: 100vw;
+width: 98.9vw;
 height: 100vh;
 filter: blur(3px);
 }
 
 nav{
-    position: fixed;
+    position: sticky;
 
     z-index: 10;
     top: 0;
     left: 0;
-    width: 100vw;
 }
-nav img{
-    height: 46px;
-    width: 307px;
-    padding: 1vw;
-}
+
 
 ul{
     list-style: none;
     float: right;
 	display: grid;
     grid-template-columns:  repeat(7, 1fr);
-    width: calc(100vw - 307px);
+    width: calc(96vw - 307px);
     height: calc(46px + 2vw);
     top: 0;
     position: absolute;
     left: calc(307px + 2vw);
 }
 
-li{
-    background-color: gray;
+
+nav img{
+    height: 46px;
+    width: 307px;
+    padding: 1vw;
 }
-a{
+
+ul a{
+    background-color: gray;
+    text-align: center ;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    border-right: 1px solid rgba(0,0,0,0.2);
+    border-left: 1px solid rgba(255,255,255,0.1) ;
+    color: #c8c8c8;
+    background-color: #3a3f44;
+    border-radius: 1px;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+    padding: 0.8em;
+}
+
+ul a:hover{
+background-color: rgb(52,56,61);
+border: none;
+color: rgb(255, 114, 0);
+}
+
+iframe{
+    border: none;
+}
+
+
+h2{
     
+    color: rgb(200, 200, 200);
+}
+p{
+    color: rgb(200, 200, 200);
 }
