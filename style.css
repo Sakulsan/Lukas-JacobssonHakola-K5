@@ -2,16 +2,10 @@
     padding: 0;
     margin: 0;
     background-color: rgb(22, 22, 22);
+    color: rgb(200, 200, 200);
     font-family: "Segoe UI","Helvetica Neue","Helvetica",Arial,sans-serif;
 }
-article{
-    left: 12vw;
-    top: 25vh;
-    position: relative;
-    width: 66vw;
-    height: 115vh;
-    padding: 10vh;
-}
+
 
 h2{
     color: white;
@@ -41,9 +35,13 @@ nav{
     left: 0;
 }
 
-
 ul{
+
     list-style: none;
+}
+
+
+nav ul{
     float: right;
 	display: grid;
     grid-template-columns:  repeat(7, 1fr);
@@ -61,7 +59,7 @@ nav img{
     padding: 1vw;
 }
 
-ul a{
+nav ul a{
     background-color: gray;
     text-align: center ;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
@@ -80,16 +78,46 @@ background-color: rgb(52,56,61);
 border: none;
 color: rgb(255, 114, 0);
 }
+article{
+    left: 10vw;
+    top: 25vh;
+    position: relative;
+    width: 72vw;
+    height: 115vh;
+    padding: 3.5vw;
+}
+
+
+#StartArticle{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+
+#StartArticle div{
+    padding: 1vw;
+}
+
+
+#StartArticle li{
+    height: 10vh;
+    width: 10vw;
+    margin: 1vw;
+    background-color: green;
+    border-radius: 1vh;
+    align-content: stretch;
+    text-align: center;
+}
+
+#StartArticle a{
+    width: 10vw;
+}
+
+
 
 iframe{
     border: none;
+    grid-column: 2 3;
+    width: 39vw;
+    height:21.94vw;
 }
 
-
-h2{
-    
-    color: rgb(200, 200, 200);
-}
-p{
-    color: rgb(200, 200, 200);
-}
