@@ -1,0 +1,80 @@
+*{
+    
+    padding: 0;
+    margin: 0;
+    font-family: "Segoe UI","Helvetica Neue","Helvetica",Arial,sans-serif;
+}
+
+#bakdrop{
+    top: 0;
+    position: initial;
+    width: 98.9vw;
+    height: 100vh;
+    filter: blur(3px);
+    }
+    
+    nav{
+        position: sticky;
+    
+        z-index: 10;
+        top: 0;
+        left: 0;
+        background-image: url(Content/stressed_linen_texture.png);
+
+    }
+    
+    
+    nav ul{
+        list-style: none;
+        float: right;
+        display: grid;
+        grid-template-columns:  repeat(7, 1fr);
+        width: calc(96vw - 307px);
+        height: calc(46px + 2vw);
+        top: 0;
+        position: absolute;
+        left: calc(307px + 2vw);
+    }
+    
+    
+    nav img{
+        height: 46px;
+        width: 307px;
+        padding: 1vw;
+    }
+    
+    nav ul a{
+        background-color: gray;
+        text-align: center ;
+        text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+        border-right: 1px solid rgba(0,0,0,0.2);
+        border-left: 1px solid rgba(255,255,255,0.1) ;
+        color: #c8c8c8;
+        background-color: #3a3f44;
+        border-radius: 1px;
+        margin-top: 1.5vh;
+        margin-bottom: 1.5vh;
+        padding: 0.8em;
+    }
+    
+    nav ul a:hover{
+    background-color: rgb(52,56,61);
+    border: none;
+    color: rgb(255, 114, 0);
+    }
+
+    @media only screen and (max-width: 900px) {
+        nav ul{
+            grid-template-columns: none;
+            grid-template-rows:  repeat(7, 1fr);
+            width: 100vw;
+            height: 60vh;
+            top: calc(46px + 3vh);
+            position: absolute;
+            left: 100vw;
+        }
+        nav img{
+            position: fixed;
+            left: calc(50vw - 153px);
+        }
+    }
