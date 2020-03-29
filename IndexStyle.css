@@ -6,6 +6,7 @@
 body{
     
     background-color: rgb(22, 22, 22);
+    width: 97vw;
 }
 
 #bakdrop{
@@ -16,6 +17,13 @@ width: 100vw;
 height: 100vh;
 filter: blur(3px);
 }
+#bakdrop{
+    top: 0;
+    position: initial;
+    width: 97.9vw;
+    height: 100vh;
+    filter: blur(3px);
+    }
 
 
 
@@ -87,7 +95,7 @@ iframe{
     border-top: lawngreen 5px solid;
     background-color: rgb(22, 22, 22);
     top: -92vh;;
-    width: 100vw;
+    width: 98.9vw;
     position: relative;
 }
 
@@ -113,9 +121,9 @@ iframe{
 
 
 #StartArticle{
-    display: initial;
+
     grid-template-columns: none;
-    float: left;
+    
 }
 
     iframe{
