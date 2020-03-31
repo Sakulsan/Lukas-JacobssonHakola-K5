@@ -1,12 +1,14 @@
 console.log("hey");
 var out = false;
 document.querySelector("#Hamburger").addEventListener("click", function(){
-    
-    if(out){ document.querySelector("#burgor").style.left = "100vw";
+    var borgar = document.querySelector("#burgor");
+    if(out){ borgar.style.left = "100vw";
+    borgar.style.width = 0;
     out = false;
 }
     
-    else {document.querySelector("#burgor").style.left = 0;
+    else {borgar.style.left = 0;
+    borgar.style.width = "100vw";
     out = true;
 }
 }) ;
