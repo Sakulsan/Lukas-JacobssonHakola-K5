@@ -6,12 +6,20 @@
 body{
     
     background-color: rgb(22, 22, 22);
+    width: 97vw;
 }
 
 #bakdrop{
+top: 0;
+position: absolute;
+z-index: 0;
+width: 100vw;
+height: 100vh;
+filter: blur(3px);
+}
+#bakdrop{
     top: 0;
-    z-index: 0;
-    position: absolute;
+    position: initial;
     width: 97.9vw;
     height: 100vh;
     filter: blur(3px);
@@ -20,6 +28,7 @@ body{
 
 
 main{
+    background-image: url(Content/stressed_linen_texture.png);
     position: relative;
 }
 
@@ -29,8 +38,8 @@ main{
     display: grid;
     grid-template-columns: 2fr 3fr;
     left: 10vw;
+    top: -86.5vh;
     position: relative;
-    top: 20vh;
     width: 72vw;
     height: 86.5vh;
     padding: 3vw;
@@ -83,9 +92,9 @@ iframe{
 #SocialMedia{
     border-top: rgb(255, 114, 0) 5px solid;
     background-color: rgb(22, 22, 22);
+    top: -86vh;;
     width: 98.9vw;
     position: relative;
-    top: 20vw;
 }
 
 #SocialMedia h3 {
@@ -99,20 +108,10 @@ iframe{
     list-style: none;
 }
 
-#SocialMedia li{
-    margin: auto;
-    display: block;
-}
-
 #about{
     position: relative;
-    top: 20vw;
+    top: -86.5vh;
 }
-footer{
-        
-    top: 45vh;
-}
-
 
 
 
@@ -147,47 +146,20 @@ height: 40.50vw;
     }
 
     #filler{
-        height: 40vh;
+        height: 110vh;
         top: -20vh;
         display: block;
     }
 
-    
-
 }
+@media only screen and (max-width: 900px) {
+    #smallgrid{
+        grid-template-columns: 1fr;
+        padding: 3em;
+    }
 
 
-    @media only screen and (max-width: 800px) {
-        #SocialMedia ul{
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-        }
-        .filler{
-            display: none;
-        }
-        #SocialMedia li:nth-of-type(2){
-            grid-column: 1;
-            grid-row: 1;
-        }
-        #SocialMedia li:nth-of-type(3){
-            grid-column: 2;
-            grid-row: 1;
-        }
-        #SocialMedia li:nth-of-type(4){
-            grid-column: 3;
-            grid-row: 1;
-        }#SocialMedia li:nth-of-type(5){
-            grid-column: 1;
-            grid-row: 2;
-        }#SocialMedia li:nth-of-type(6){
-            grid-column: 2;
-            grid-row: 2;
-        }#SocialMedia li:nth-of-type(7){
-            grid-column: 3;
-            grid-row: 2;
-        }
-
-        }
+    }
     
 
 @media only screen and (max-width: 500px) {
@@ -222,41 +194,5 @@ height: 40.50vw;
     }  #smallgrid{
         font-size: 0.8em;
     }
-
-    #SocialMedia{
-        margin: 0;
-        width: auto;
-        height: auto;
     }
-    }
-    @media only screen and (max-width: 400px) {
-        #SocialMedia ul{
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-        }
-        .filler{
-            display: none;
-        }
-        #SocialMedia li:nth-of-type(2){
-            grid-column: 1;
-            grid-row: 1;
-        }
-        #SocialMedia li:nth-of-type(3){
-            grid-column: 2;
-            grid-row: 1;
-        }
-        #SocialMedia li:nth-of-type(4){
-            grid-column: 1;
-            grid-row: 2;
-        }#SocialMedia li:nth-of-type(5){
-            grid-column: 2;
-            grid-row: 2;
-        }#SocialMedia li:nth-of-type(6){
-            grid-column: 1;
-            grid-row: 3;
-        }#SocialMedia li:nth-of-type(7){
-            grid-column: 2;
-            grid-row: 3;
-        }
-        }
-        
+    

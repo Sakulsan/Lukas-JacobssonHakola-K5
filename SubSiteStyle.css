@@ -61,12 +61,6 @@ iframe{
     display: block;
     margin:auto
 }
-@media only screen and (max-width: 900px) {
-    #smallgrid{
-        grid-template-columns: 1fr;
-        padding: 3em;
-    }
-    }
 
 @media only screen and (max-width: 1900px) {
 
