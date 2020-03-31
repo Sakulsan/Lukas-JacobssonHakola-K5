@@ -27,9 +27,9 @@ filter: blur(3px);
 
 
 
-article{
+main{
     background-image: url(Content/stressed_linen_texture.png);
-    top: 0;
+    position: relative;
 }
 
 
@@ -41,7 +41,8 @@ article{
     top: -86.5vh;
     position: relative;
     width: 72vw;
-    padding: 3.5vw;
+    height: 86.5vh;
+    padding: 3vw;
 }
 
 
@@ -49,52 +50,52 @@ article{
 h2{
     color: white;
     font-size: 4em;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    text-align: center;
     background-color: rgba(0,0,0,0);
     text-align: center;
-    padding-right: 3.2vw;
-}
-
-#StartArticle li{
-    height: 10vh;
-    width: 10vw;
-    list-style: none;
-    justify-self: stretch;
+    padding-bottom: 10vh;
 }
 
 #StartArticle li:nth-of-type(1){
-    width: 11vw;
 }
 
 #StartArticle a{
-    visibility: visible;
     background-color: hsl(20, 79%, 30%);
     text-align: center;
-    padding: 1.2vw;
-    padding-left: 2.1vw;
-    padding-right: 2.1vw;
-}
-#StartArticle a:nth-of-type(1){
-    padding-left: 4vw;
-    padding-right: 4vw;
+    display: block;
+    padding: auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border: 3px solid  rgba(0,0,0,0.4);
 }
 
+#StartArticle a:nth-of-type(2){
+    
+    border-left: 3px solid  rgba(0,0,0,0.1);
+}
 
+#smallgrid{
+    display: grid;
+grid-template-columns: 2fr 1fr;
+}
 
 iframe{
     border: none;
     width: 37vw;
     height:20.81vw;
-    margin-top: -3vh;
-    margin-bottom: 5vh;
+    display: block;
+    margin: auto;
+    padding-top: 1vw;
 }
 
+#filler{
+    height: 0;
+}
 
 #SocialMedia{
-    border-top: lawngreen 5px solid;
+    border-top: rgb(255, 114, 0) 5px solid;
     background-color: rgb(22, 22, 22);
-    top: -92vh;;
+    top: -86vh;;
     width: 98.9vw;
     position: relative;
 }
@@ -117,7 +118,7 @@ iframe{
 
 
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1100px) {
 
 
 #StartArticle{
@@ -137,22 +138,64 @@ height: 40.50vw;
     }
 
     
+    #StartArticle a{
+        display: block;
+        margin-bottom: 2vh;
+        font-size: 200%;
+    }
+    iframe{
+        
+        margin-top: 2vh;
+    }
+
+    #filler{
+        height: 110vh;
+        top: -20vh;
+        display: block;
+    }
 
 }
+@media only screen and (max-width: 900px) {
+    #smallgrid{
+        grid-template-columns: 1fr;
+        padding: 3em;
+    }
+
+
+    }
+    
 
 @media only screen and (max-width: 500px) {
+
+    *{
+        top: 0;
+    }
+
 
     #StartArticle{
         width: 100vw;
         left: 0;
-        top: -76.5vh;
+        top: 0vh;
+        position: block;
+        padding: 0;
     }
 
     #bakdrop{
         height: 50vh;
+        display: none;
         }
     Article{
         width: 100vw;
+        top:0;
+    }
+    #SocialMedia{
+        top: 0;
+    }
+    #about{
+        position: relative;
+        top: 0;
+    }  #smallgrid{
+        font-size: 0.8em;
     }
     }
     

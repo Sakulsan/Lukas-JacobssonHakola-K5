@@ -8,20 +8,30 @@ body{
     background-image: url(Content/stressed_linen_texture.png);
 }
 
-article{
-    margin: 15vw;
+main{
+    margin: auto;
     margin-top: 3vw;
     font-size: 103%;
+    display: block;
+    width: 980px;
 }
 
-ul{
-    margin-left: 2vw;
+.ThickMain{
+    width: 1470px;
 }
 
 li {
     margin-top: 1em;
 }
 
+h3{
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+}
+
+main ul{
+    padding-left: 2em;
+}
 a{
     color: rgb(255, 114, 0);
 }
@@ -31,7 +41,7 @@ a{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-img{
+main img{
         display:block;
         margin:auto;
     
@@ -46,6 +56,12 @@ h1{
     padding-left: 1.5em;
 }
 
+iframe{
+    padding: 10px;
+    display: block;
+    margin:auto
+}
+
 @media only screen and (max-width: 1900px) {
 
     .mediaList{
@@ -56,9 +72,8 @@ h1{
 
     @media only screen and (max-width: 1300px) {
 
-      article{
-        margin: 5vw;
-        margin-top: 3vw;
+      main{
+          width: 980px;
       }
         }
 
@@ -66,5 +81,7 @@ h1{
 
             .mediaList{
                 grid-template-columns: 1fr;
+            }
+            main{width: auto;
             }
               }
