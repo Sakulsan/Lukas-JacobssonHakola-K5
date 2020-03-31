@@ -14,7 +14,6 @@
         top: 0;
         left: 0;
         background-image: url(Content/stressed_linen_texture.png);
-        overflow: hidden;
 
     }
     
@@ -29,7 +28,9 @@
         top: 0;
         position: absolute;
         left: calc(307px + 2vw);
+        overflow: hidden;
     }
+
     
     
     nav img{
@@ -59,9 +60,9 @@
     }
 
     #Hamburger{
-        background-color: khaki;
+        background-color: whitesmoke;
         display: none;
-        right: 0;
+        right: -2.1vw;
         top: 0;
         position: fixed;
         border-bottom-left-radius: 10px;
@@ -132,7 +133,7 @@ text-align: center;
 
         nav a{
             display: block;
-            width: calc(100vw - 48px);
+            width: 100vw;
             margin-bottom: 0;
         }
 
